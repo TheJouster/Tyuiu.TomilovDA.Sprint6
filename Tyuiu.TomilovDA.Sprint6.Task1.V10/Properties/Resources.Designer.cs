@@ -8,7 +8,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace Tyuiu.TomilovDA.Sprint6.Task0.V10.Properties {
+namespace Tyuiu.TomilovDA.Sprint6.Task1.V10.Properties {
     using System;
     
     
@@ -39,7 +39,7 @@ namespace Tyuiu.TomilovDA.Sprint6.Task0.V10.Properties {
         internal static global::System.Resources.ResourceManager ResourceManager {
             get {
                 if (object.ReferenceEquals(resourceMan, null)) {
-                    global::System.Resources.ResourceManager temp = new global::System.Resources.ResourceManager("Tyuiu.TomilovDA.Sprint6.Task0.V10.Properties.Resources", typeof(Resources).Assembly);
+                    global::System.Resources.ResourceManager temp = new global::System.Resources.ResourceManager("Tyuiu.TomilovDA.Sprint6.Task1.V10.Properties.Resources", typeof(Resources).Assembly);
                     resourceMan = temp;
                 }
                 return resourceMan;
@@ -63,9 +63,9 @@ namespace Tyuiu.TomilovDA.Sprint6.Task0.V10.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap imgCondition1 {
+        internal static System.Drawing.Bitmap imgCondition2 {
             get {
-                object obj = ResourceManager.GetObject("imgCondition1", resourceCulture);
+                object obj = ResourceManager.GetObject("imgCondition2", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
