@@ -57,5 +57,10 @@ namespace Tyuiu.TomilovDA.Sprint6.Task3.V6
                 }
             }
         }
+
+        private void buttonHelp_TDA_Click(object sender, EventArgs e)
+        {
+            MessageBox.Show("Таск 3 выполнил студент группы ПКТб-24-1 Томилов Дмитрий Алексеевич", "Сообщение", MessageBoxButtons.OK, MessageBoxIcon.Information);
+        }
     }
 }

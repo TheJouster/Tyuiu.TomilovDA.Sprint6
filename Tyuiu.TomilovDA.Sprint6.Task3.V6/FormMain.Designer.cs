@@ -138,6 +138,7 @@
             buttonHelp_TDA.TabIndex = 4;
             buttonHelp_TDA.Text = "?";
             buttonHelp_TDA.UseVisualStyleBackColor = false;
+            buttonHelp_TDA.Click += buttonHelp_TDA_Click;
             // 
             // FormMain
             // 
