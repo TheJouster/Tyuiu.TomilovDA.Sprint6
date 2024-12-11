@@ -94,6 +94,7 @@
             toolTipOpen_TDA.SetToolTip(buttonDone_TDA, "Обрабатывает файл по условию");
             buttonDone_TDA.UseVisualStyleBackColor = false;
             buttonDone_TDA.Click += buttonDone_TDA_Click;
+            buttonDone_TDA.MouseEnter += buttonDone_TDA_MouseEnter;
             // 
             // buttonHelp_TDA
             // 
@@ -107,6 +108,7 @@
             toolTipOpen_TDA.SetToolTip(buttonHelp_TDA, "Сведения о программе");
             buttonHelp_TDA.UseVisualStyleBackColor = false;
             buttonHelp_TDA.Click += buttonHelp_TDA_Click;
+            buttonHelp_TDA.MouseEnter += buttonHelp_TDA_MouseEnter;
             // 
             // buttonOpen_TDA
             // 
@@ -116,9 +118,10 @@
             buttonOpen_TDA.Name = "buttonOpen_TDA";
             buttonOpen_TDA.Size = new Size(100, 71);
             buttonOpen_TDA.TabIndex = 5;
-            toolTipOpen_TDA.SetToolTip(buttonOpen_TDA, "Открыть файл\r\nВыберите нужный файл для обработки\r\n");
+            toolTipOpen_TDA.SetToolTip(buttonOpen_TDA, "Выберите нужный файл для обработки\r\n");
             buttonOpen_TDA.UseVisualStyleBackColor = false;
             buttonOpen_TDA.Click += buttonOpen_TDA_Click;
+            buttonOpen_TDA.MouseEnter += buttonOpen_TDA_MouseEnter;
             // 
             // panelTop_TDA
             // 
@@ -136,12 +139,16 @@
             // buttonSave_TDA
             // 
             buttonSave_TDA.BackColor = SystemColors.Menu;
+            buttonSave_TDA.Enabled = false;
             buttonSave_TDA.Image = Properties.Resources.page_save;
             buttonSave_TDA.Location = new Point(214, 3);
             buttonSave_TDA.Name = "buttonSave_TDA";
             buttonSave_TDA.Size = new Size(95, 71);
             buttonSave_TDA.TabIndex = 6;
+            toolTipOpen_TDA.SetToolTip(buttonSave_TDA, "Выберите место сохранения\r\n");
             buttonSave_TDA.UseVisualStyleBackColor = false;
+            buttonSave_TDA.Click += buttonSave_TDA_Click;
+            buttonSave_TDA.MouseEnter += buttonSave_TDA_MouseEnter;
             // 
             // groupBoxOutput_TDA
             // 
@@ -157,9 +164,12 @@
             // dataGridViewOut_TDA
             // 
             dataGridViewOut_TDA.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            dataGridViewOut_TDA.ColumnHeadersVisible = false;
             dataGridViewOut_TDA.Dock = DockStyle.Fill;
             dataGridViewOut_TDA.Location = new Point(3, 19);
             dataGridViewOut_TDA.Name = "dataGridViewOut_TDA";
+            dataGridViewOut_TDA.ReadOnly = true;
+            dataGridViewOut_TDA.RowHeadersVisible = false;
             dataGridViewOut_TDA.Size = new Size(435, 386);
             dataGridViewOut_TDA.TabIndex = 0;
             // 
@@ -186,9 +196,12 @@
             // dataGridViewIn_TDA
             // 
             dataGridViewIn_TDA.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            dataGridViewIn_TDA.ColumnHeadersVisible = false;
             dataGridViewIn_TDA.Dock = DockStyle.Fill;
             dataGridViewIn_TDA.Location = new Point(3, 19);
             dataGridViewIn_TDA.Name = "dataGridViewIn_TDA";
+            dataGridViewIn_TDA.ReadOnly = true;
+            dataGridViewIn_TDA.RowHeadersVisible = false;
             dataGridViewIn_TDA.Size = new Size(414, 386);
             dataGridViewIn_TDA.TabIndex = 0;
             // 
@@ -211,6 +224,7 @@
             // 
             // toolTipOpen_TDA
             // 
+            toolTipOpen_TDA.IsBalloon = true;
             toolTipOpen_TDA.ToolTipIcon = ToolTipIcon.Info;
             toolTipOpen_TDA.ToolTipTitle = "Подсказка";
             // 
@@ -227,6 +241,7 @@
             Name = "FormMain";
             StartPosition = FormStartPosition.CenterScreen;
             Text = "Спринт 6 | Таск 7 | Вариант 19 | Томилов Д.А.";
+            Load += FormMain_Load;
             groupBoxMain_TDA.ResumeLayout(false);
             groupBoxMain_TDA.PerformLayout();
             panelTop_TDA.ResumeLayout(false);
