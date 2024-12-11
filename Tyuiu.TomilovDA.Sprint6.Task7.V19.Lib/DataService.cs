@@ -18,7 +18,7 @@ namespace Tyuiu.TomilovDA.Sprint6.Task7.V19.Lib
                 {
                     if (i == 1)
                     {
-                        if (matrix[i, j] % 2 == 0)
+                        if (Convert.ToInt32(values[j]) % 2 == 0)
                         {
                             matrix[i, j] = 2;
                         }
