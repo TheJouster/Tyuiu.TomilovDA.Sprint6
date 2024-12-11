@@ -19,7 +19,7 @@ namespace Tyuiu.TomilovDA.Sprint6.Task6.V2.Lib
                     }
                 }
             }
-            return resString;
+            return resString.TrimEnd();
         }
     }
 }
