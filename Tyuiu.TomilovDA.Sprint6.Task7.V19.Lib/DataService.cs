@@ -8,7 +8,7 @@ namespace Tyuiu.TomilovDA.Sprint6.Task7.V19.Lib
         {
             string[] lines = File.ReadAllLines(path);
 
-            int[,] matrix = new int[lines.Length, lines[0].Split(',').Length];
+            int[,] matrix = new int[lines.Length, lines[0].Split(';').Length];
 
             for (int i = 0; i < lines.Length; i++)
             {
